@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/Users/mykhailokhymochko/Desktop/C++/Telecommunication/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -g -std=gnu++20 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/Telecommunication.dir/ProviderSimulation/ProviderSimulation/src/core/BaseStation.cpp.o -c /Users/mykhailokhymochko/Desktop/C++/Telecommunication/ProviderSimulation/ProviderSimulation/src/core/BaseStation.cpp",
+  "file": "/Users/mykhailokhymochko/Desktop/C++/Telecommunication/ProviderSimulation/ProviderSimulation/src/core/BaseStation.cpp",
+  "output": "CMakeFiles/Telecommunication.dir/ProviderSimulation/ProviderSimulation/src/core/BaseStation.cpp.o"
+},
+{
+  "directory": "/Users/mykhailokhymochko/Desktop/C++/Telecommunication/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -g -std=gnu++20 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/Telecommunication.dir/ProviderSimulation/ProviderSimulation/src/core/Client.cpp.o -c /Users/mykhailokhymochko/Desktop/C++/Telecommunication/ProviderSimulation/ProviderSimulation/src/core/Client.cpp",
+  "file": "/Users/mykhailokhymochko/Desktop/C++/Telecommunication/ProviderSimulation/ProviderSimulation/src/core/Client.cpp",
+  "output": "CMakeFiles/Telecommunication.dir/ProviderSimulation/ProviderSimulation/src/core/Client.cpp.o"
+},
+{
+  "directory": "/Users/mykhailokhymochko/Desktop/C++/Telecommunication/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -g -std=gnu++20 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/Telecommunication.dir/ProviderSimulation/ProviderSimulation/src/main.cpp.o -c /Users/mykhailokhymochko/Desktop/C++/Telecommunication/ProviderSimulation/ProviderSimulation/src/main.cpp",
+  "file": "/Users/mykhailokhymochko/Desktop/C++/Telecommunication/ProviderSimulation/ProviderSimulation/src/main.cpp",
+  "output": "CMakeFiles/Telecommunication.dir/ProviderSimulation/ProviderSimulation/src/main.cpp.o"
+},
+{
+  "directory": "/Users/mykhailokhymochko/Desktop/C++/Telecommunication/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -g -std=gnu++20 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/Telecommunication.dir/CMakeFiles/3.31.3/CompilerIdCXX/CMakeCXXCompilerId.cpp.o -c /Users/mykhailokhymochko/Desktop/C++/Telecommunication/build/CMakeFiles/3.31.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+  "file": "/Users/mykhailokhymochko/Desktop/C++/Telecommunication/build/CMakeFiles/3.31.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+  "output": "CMakeFiles/Telecommunication.dir/CMakeFiles/3.31.3/CompilerIdCXX/CMakeCXXCompilerId.cpp.o"
+}
+]

@@ -1,0 +1,2 @@
+/Users/mykhailokhymochko/Desktop/C++/Telecommunication/build/CMakeFiles/edit_cache.dir
+/Users/mykhailokhymochko/Desktop/C++/Telecommunication/build/CMakeFiles/rebuild_cache.dir
