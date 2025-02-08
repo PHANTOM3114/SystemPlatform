@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/Users/mykhailokhymochko/Desktop/Telecom/build",
+  "command": "/usr/bin/clang++ -I/Users/mykhailokhymochko/Desktop/Telecom/include -g -std=gnu++20 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/server.dir/src/main.cpp.o -c /Users/mykhailokhymochko/Desktop/Telecom/src/main.cpp",
+  "file": "/Users/mykhailokhymochko/Desktop/Telecom/src/main.cpp",
+  "output": "CMakeFiles/server.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/mykhailokhymochko/Desktop/Telecom/build",
+  "command": "/usr/bin/clang++ -I/Users/mykhailokhymochko/Desktop/Telecom/include -g -std=gnu++20 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/server.dir/src/core/server.cpp.o -c /Users/mykhailokhymochko/Desktop/Telecom/src/core/server.cpp",
+  "file": "/Users/mykhailokhymochko/Desktop/Telecom/src/core/server.cpp",
+  "output": "CMakeFiles/server.dir/src/core/server.cpp.o"
+},
+{
+  "directory": "/Users/mykhailokhymochko/Desktop/Telecom/build",
+  "command": "/usr/bin/clang++ -I/Users/mykhailokhymochko/Desktop/Telecom/include -g -std=gnu++20 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/server.dir/src/core/centralnode.cpp.o -c /Users/mykhailokhymochko/Desktop/Telecom/src/core/centralnode.cpp",
+  "file": "/Users/mykhailokhymochko/Desktop/Telecom/src/core/centralnode.cpp",
+  "output": "CMakeFiles/server.dir/src/core/centralnode.cpp.o"
+},
+{
+  "directory": "/Users/mykhailokhymochko/Desktop/Telecom/build",
+  "command": "/usr/bin/clang++ -I/Users/mykhailokhymochko/Desktop/Telecom/include -g -std=gnu++20 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/server.dir/src/core/station.cpp.o -c /Users/mykhailokhymochko/Desktop/Telecom/src/core/station.cpp",
+  "file": "/Users/mykhailokhymochko/Desktop/Telecom/src/core/station.cpp",
+  "output": "CMakeFiles/server.dir/src/core/station.cpp.o"
+},
+{
+  "directory": "/Users/mykhailokhymochko/Desktop/Telecom/build",
+  "command": "/usr/bin/clang++ -I/Users/mykhailokhymochko/Desktop/Telecom/include -g -std=gnu++20 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/server.dir/src/core/client.cpp.o -c /Users/mykhailokhymochko/Desktop/Telecom/src/core/client.cpp",
+  "file": "/Users/mykhailokhymochko/Desktop/Telecom/src/core/client.cpp",
+  "output": "CMakeFiles/server.dir/src/core/client.cpp.o"
+}
+]
