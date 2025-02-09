@@ -1,6 +1,8 @@
 #pragma once
 
 #include <iostream>
+#include <fstream>
+#include <filesystem>
 #include <cstdlib>
 #include <cstring>
 #include <unistd.h>

@@ -3,22 +3,22 @@ project(TelecomServer)
 
 set(CMAKE_CXX_STANDARD 20)
 
-# Додаємо шляхи до заголовків
+# Add include directories
 include_directories(include)
 
-# Додаємо вихідні файли
+# Add source files
 set(SOURCES
     src/main.cpp
     src/core/server.cpp
-    src/core/centralnode.cpp
-    src/core/station.cpp
+    src/core/node.cpp
     src/core/client.cpp
 )
 
+# Set the output directory for the executable
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
-# Створюємо виконуваний файл
+# Create executable
 add_executable(server ${SOURCES})
 
-# Лінкуємо бібліотеки
+# Link libraries
 target_link_libraries(server pthread)

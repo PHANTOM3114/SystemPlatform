@@ -63,15 +63,8 @@ build CMakeFiles/server.dir/src/core/server.cpp.o: CXX_COMPILER__server_unscanne
   OBJECT_DIR = CMakeFiles/server.dir
   OBJECT_FILE_DIR = CMakeFiles/server.dir/src/core
 
-build CMakeFiles/server.dir/src/core/centralnode.cpp.o: CXX_COMPILER__server_unscanned_Debug /Users/mykhailokhymochko/Desktop/Telecom/src/core/centralnode.cpp || cmake_object_order_depends_target_server
-  DEP_FILE = CMakeFiles/server.dir/src/core/centralnode.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk
-  INCLUDES = -I/Users/mykhailokhymochko/Desktop/Telecom/include
-  OBJECT_DIR = CMakeFiles/server.dir
-  OBJECT_FILE_DIR = CMakeFiles/server.dir/src/core
-
-build CMakeFiles/server.dir/src/core/station.cpp.o: CXX_COMPILER__server_unscanned_Debug /Users/mykhailokhymochko/Desktop/Telecom/src/core/station.cpp || cmake_object_order_depends_target_server
-  DEP_FILE = CMakeFiles/server.dir/src/core/station.cpp.o.d
+build CMakeFiles/server.dir/src/core/node.cpp.o: CXX_COMPILER__server_unscanned_Debug /Users/mykhailokhymochko/Desktop/Telecom/src/core/node.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = CMakeFiles/server.dir/src/core/node.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk
   INCLUDES = -I/Users/mykhailokhymochko/Desktop/Telecom/include
   OBJECT_DIR = CMakeFiles/server.dir
@@ -92,7 +85,7 @@ build CMakeFiles/server.dir/src/core/client.cpp.o: CXX_COMPILER__server_unscanne
 #############################################
 # Link the executable server
 
-build server: CXX_EXECUTABLE_LINKER__server_Debug CMakeFiles/server.dir/src/main.cpp.o CMakeFiles/server.dir/src/core/server.cpp.o CMakeFiles/server.dir/src/core/centralnode.cpp.o CMakeFiles/server.dir/src/core/station.cpp.o CMakeFiles/server.dir/src/core/client.cpp.o
+build server: CXX_EXECUTABLE_LINKER__server_Debug CMakeFiles/server.dir/src/main.cpp.o CMakeFiles/server.dir/src/core/server.cpp.o CMakeFiles/server.dir/src/core/node.cpp.o CMakeFiles/server.dir/src/core/client.cpp.o
   FLAGS = -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk
   LINK_LIBRARIES = -lpthread
   OBJECT_DIR = CMakeFiles/server.dir

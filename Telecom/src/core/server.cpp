@@ -103,6 +103,20 @@ int server::find_available_port(int start_port, int end_port)
     }
 
     int free_port = ntohs(addr.sin_port);
+
+    std::string file_path = std::filesystem::current_path().string() + "/data/server_port.txt";
+    std::ofstream port_file(file_path, std::ios::trunc);
+
+    if (port_file.is_open())
+    {
+        port_file << free_port;
+        port_file.close();
+    }
+    else
+    {
+        std::cerr << "Error: cannot write to server_port.txt!\n"; 
+    }
+
     close(sock_fd);
     return free_port;
 }

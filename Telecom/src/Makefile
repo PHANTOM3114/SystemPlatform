@@ -129,30 +129,6 @@ server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
 
-core/centralnode.o: core/centralnode.cpp.o
-.PHONY : core/centralnode.o
-
-# target to build an object file
-core/centralnode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/core/centralnode.cpp.o
-.PHONY : core/centralnode.cpp.o
-
-core/centralnode.i: core/centralnode.cpp.i
-.PHONY : core/centralnode.i
-
-# target to preprocess a source file
-core/centralnode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/core/centralnode.cpp.i
-.PHONY : core/centralnode.cpp.i
-
-core/centralnode.s: core/centralnode.cpp.s
-.PHONY : core/centralnode.s
-
-# target to generate assembly for a file
-core/centralnode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/core/centralnode.cpp.s
-.PHONY : core/centralnode.cpp.s
-
 core/client.o: core/client.cpp.o
 .PHONY : core/client.o
 
@@ -177,6 +153,30 @@ core/client.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/core/client.cpp.s
 .PHONY : core/client.cpp.s
 
+core/node.o: core/node.cpp.o
+.PHONY : core/node.o
+
+# target to build an object file
+core/node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/core/node.cpp.o
+.PHONY : core/node.cpp.o
+
+core/node.i: core/node.cpp.i
+.PHONY : core/node.i
+
+# target to preprocess a source file
+core/node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/core/node.cpp.i
+.PHONY : core/node.cpp.i
+
+core/node.s: core/node.cpp.s
+.PHONY : core/node.s
+
+# target to generate assembly for a file
+core/node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/core/node.cpp.s
+.PHONY : core/node.cpp.s
+
 core/server.o: core/server.cpp.o
 .PHONY : core/server.o
 
@@ -200,30 +200,6 @@ core/server.s: core/server.cpp.s
 core/server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/core/server.cpp.s
 .PHONY : core/server.cpp.s
-
-core/station.o: core/station.cpp.o
-.PHONY : core/station.o
-
-# target to build an object file
-core/station.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/core/station.cpp.o
-.PHONY : core/station.cpp.o
-
-core/station.i: core/station.cpp.i
-.PHONY : core/station.i
-
-# target to preprocess a source file
-core/station.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/core/station.cpp.i
-.PHONY : core/station.cpp.i
-
-core/station.s: core/station.cpp.s
-.PHONY : core/station.s
-
-# target to generate assembly for a file
-core/station.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/core/station.cpp.s
-.PHONY : core/station.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -258,18 +234,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... server"
-	@echo "... core/centralnode.o"
-	@echo "... core/centralnode.i"
-	@echo "... core/centralnode.s"
 	@echo "... core/client.o"
 	@echo "... core/client.i"
 	@echo "... core/client.s"
+	@echo "... core/node.o"
+	@echo "... core/node.i"
+	@echo "... core/node.s"
 	@echo "... core/server.o"
 	@echo "... core/server.i"
 	@echo "... core/server.s"
-	@echo "... core/station.o"
-	@echo "... core/station.i"
-	@echo "... core/station.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

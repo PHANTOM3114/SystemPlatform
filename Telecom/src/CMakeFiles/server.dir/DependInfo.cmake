@@ -8,10 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/mykhailokhymochko/Desktop/Telecom/src/core/centralnode.cpp" "CMakeFiles/server.dir/core/centralnode.cpp.o" "gcc" "CMakeFiles/server.dir/core/centralnode.cpp.o.d"
   "/Users/mykhailokhymochko/Desktop/Telecom/src/core/client.cpp" "CMakeFiles/server.dir/core/client.cpp.o" "gcc" "CMakeFiles/server.dir/core/client.cpp.o.d"
+  "/Users/mykhailokhymochko/Desktop/Telecom/src/core/node.cpp" "CMakeFiles/server.dir/core/node.cpp.o" "gcc" "CMakeFiles/server.dir/core/node.cpp.o.d"
   "/Users/mykhailokhymochko/Desktop/Telecom/src/core/server.cpp" "CMakeFiles/server.dir/core/server.cpp.o" "gcc" "CMakeFiles/server.dir/core/server.cpp.o.d"
-  "/Users/mykhailokhymochko/Desktop/Telecom/src/core/station.cpp" "CMakeFiles/server.dir/core/station.cpp.o" "gcc" "CMakeFiles/server.dir/core/station.cpp.o.d"
   "/Users/mykhailokhymochko/Desktop/Telecom/src/main.cpp" "CMakeFiles/server.dir/main.cpp.o" "gcc" "CMakeFiles/server.dir/main.cpp.o.d"
   )
 
