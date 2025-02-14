@@ -8,7 +8,10 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Add the executable
-add_executable(NetworkClient src/main.cpp)
+add_executable(NetworkClient src/main.cpp
+                            src/core/client.cpp
+                            src/core/connection.cpp
+)
 
 # Include directories
 include_directories(${PROJECT_SOURCE_DIR}/include)

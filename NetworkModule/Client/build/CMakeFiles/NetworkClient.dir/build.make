@@ -86,17 +86,49 @@ CMakeFiles/NetworkClient.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NetworkClient.dir/src/main.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Client/src/main.cpp -o CMakeFiles/NetworkClient.dir/src/main.cpp.s
 
+CMakeFiles/NetworkClient.dir/src/core/client.cpp.o: CMakeFiles/NetworkClient.dir/flags.make
+CMakeFiles/NetworkClient.dir/src/core/client.cpp.o: /Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Client/src/core/client.cpp
+CMakeFiles/NetworkClient.dir/src/core/client.cpp.o: CMakeFiles/NetworkClient.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/NetworkClient.dir/src/core/client.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NetworkClient.dir/src/core/client.cpp.o -MF CMakeFiles/NetworkClient.dir/src/core/client.cpp.o.d -o CMakeFiles/NetworkClient.dir/src/core/client.cpp.o -c /Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Client/src/core/client.cpp
+
+CMakeFiles/NetworkClient.dir/src/core/client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NetworkClient.dir/src/core/client.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Client/src/core/client.cpp > CMakeFiles/NetworkClient.dir/src/core/client.cpp.i
+
+CMakeFiles/NetworkClient.dir/src/core/client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NetworkClient.dir/src/core/client.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Client/src/core/client.cpp -o CMakeFiles/NetworkClient.dir/src/core/client.cpp.s
+
+CMakeFiles/NetworkClient.dir/src/core/connection.cpp.o: CMakeFiles/NetworkClient.dir/flags.make
+CMakeFiles/NetworkClient.dir/src/core/connection.cpp.o: /Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Client/src/core/connection.cpp
+CMakeFiles/NetworkClient.dir/src/core/connection.cpp.o: CMakeFiles/NetworkClient.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/NetworkClient.dir/src/core/connection.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NetworkClient.dir/src/core/connection.cpp.o -MF CMakeFiles/NetworkClient.dir/src/core/connection.cpp.o.d -o CMakeFiles/NetworkClient.dir/src/core/connection.cpp.o -c /Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Client/src/core/connection.cpp
+
+CMakeFiles/NetworkClient.dir/src/core/connection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NetworkClient.dir/src/core/connection.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Client/src/core/connection.cpp > CMakeFiles/NetworkClient.dir/src/core/connection.cpp.i
+
+CMakeFiles/NetworkClient.dir/src/core/connection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NetworkClient.dir/src/core/connection.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Client/src/core/connection.cpp -o CMakeFiles/NetworkClient.dir/src/core/connection.cpp.s
+
 # Object files for target NetworkClient
 NetworkClient_OBJECTS = \
-"CMakeFiles/NetworkClient.dir/src/main.cpp.o"
+"CMakeFiles/NetworkClient.dir/src/main.cpp.o" \
+"CMakeFiles/NetworkClient.dir/src/core/client.cpp.o" \
+"CMakeFiles/NetworkClient.dir/src/core/connection.cpp.o"
 
 # External object files for target NetworkClient
 NetworkClient_EXTERNAL_OBJECTS =
 
 NetworkClient: CMakeFiles/NetworkClient.dir/src/main.cpp.o
+NetworkClient: CMakeFiles/NetworkClient.dir/src/core/client.cpp.o
+NetworkClient: CMakeFiles/NetworkClient.dir/src/core/connection.cpp.o
 NetworkClient: CMakeFiles/NetworkClient.dir/build.make
 NetworkClient: CMakeFiles/NetworkClient.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable NetworkClient"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable NetworkClient"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/NetworkClient.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

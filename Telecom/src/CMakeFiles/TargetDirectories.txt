@@ -1,3 +1,0 @@
-/Users/mykhailokhymochko/Desktop/Telecom/src/CMakeFiles/server.dir
-/Users/mykhailokhymochko/Desktop/Telecom/src/CMakeFiles/edit_cache.dir
-/Users/mykhailokhymochko/Desktop/Telecom/src/CMakeFiles/rebuild_cache.dir

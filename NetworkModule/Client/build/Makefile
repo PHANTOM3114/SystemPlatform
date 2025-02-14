@@ -129,6 +129,54 @@ NetworkClient/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NetworkClient.dir/build.make CMakeFiles/NetworkClient.dir/build
 .PHONY : NetworkClient/fast
 
+src/core/client.o: src/core/client.cpp.o
+.PHONY : src/core/client.o
+
+# target to build an object file
+src/core/client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NetworkClient.dir/build.make CMakeFiles/NetworkClient.dir/src/core/client.cpp.o
+.PHONY : src/core/client.cpp.o
+
+src/core/client.i: src/core/client.cpp.i
+.PHONY : src/core/client.i
+
+# target to preprocess a source file
+src/core/client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NetworkClient.dir/build.make CMakeFiles/NetworkClient.dir/src/core/client.cpp.i
+.PHONY : src/core/client.cpp.i
+
+src/core/client.s: src/core/client.cpp.s
+.PHONY : src/core/client.s
+
+# target to generate assembly for a file
+src/core/client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NetworkClient.dir/build.make CMakeFiles/NetworkClient.dir/src/core/client.cpp.s
+.PHONY : src/core/client.cpp.s
+
+src/core/connection.o: src/core/connection.cpp.o
+.PHONY : src/core/connection.o
+
+# target to build an object file
+src/core/connection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NetworkClient.dir/build.make CMakeFiles/NetworkClient.dir/src/core/connection.cpp.o
+.PHONY : src/core/connection.cpp.o
+
+src/core/connection.i: src/core/connection.cpp.i
+.PHONY : src/core/connection.i
+
+# target to preprocess a source file
+src/core/connection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NetworkClient.dir/build.make CMakeFiles/NetworkClient.dir/src/core/connection.cpp.i
+.PHONY : src/core/connection.cpp.i
+
+src/core/connection.s: src/core/connection.cpp.s
+.PHONY : src/core/connection.s
+
+# target to generate assembly for a file
+src/core/connection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NetworkClient.dir/build.make CMakeFiles/NetworkClient.dir/src/core/connection.cpp.s
+.PHONY : src/core/connection.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -162,6 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... NetworkClient"
+	@echo "... src/core/client.o"
+	@echo "... src/core/client.i"
+	@echo "... src/core/client.s"
+	@echo "... src/core/connection.o"
+	@echo "... src/core/connection.i"
+	@echo "... src/core/connection.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

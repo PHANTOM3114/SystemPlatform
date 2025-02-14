@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/NetworkClient.dir/src/core/client.cpp.o"
+  "CMakeFiles/NetworkClient.dir/src/core/client.cpp.o.d"
+  "CMakeFiles/NetworkClient.dir/src/core/connection.cpp.o"
+  "CMakeFiles/NetworkClient.dir/src/core/connection.cpp.o.d"
   "CMakeFiles/NetworkClient.dir/src/main.cpp.o"
   "CMakeFiles/NetworkClient.dir/src/main.cpp.o.d"
   "NetworkClient"

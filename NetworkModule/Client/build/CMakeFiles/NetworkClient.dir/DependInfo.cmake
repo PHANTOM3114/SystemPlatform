@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Client/src/core/client.cpp" "CMakeFiles/NetworkClient.dir/src/core/client.cpp.o" "gcc" "CMakeFiles/NetworkClient.dir/src/core/client.cpp.o.d"
+  "/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Client/src/core/connection.cpp" "CMakeFiles/NetworkClient.dir/src/core/connection.cpp.o" "gcc" "CMakeFiles/NetworkClient.dir/src/core/connection.cpp.o.d"
   "/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Client/src/main.cpp" "CMakeFiles/NetworkClient.dir/src/main.cpp.o" "gcc" "CMakeFiles/NetworkClient.dir/src/main.cpp.o.d"
   )
 
