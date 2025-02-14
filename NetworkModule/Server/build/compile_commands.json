@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Server/build",
+  "command": "/usr/bin/clang++  -I/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Server/include -g -std=gnu++20 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/server.dir/src/main.cpp.o -c /Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Server/src/main.cpp",
+  "file": "/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Server/src/main.cpp",
+  "output": "CMakeFiles/server.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Server/build",
+  "command": "/usr/bin/clang++  -I/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Server/include -g -std=gnu++20 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/server.dir/src/core/server.cpp.o -c /Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Server/src/core/server.cpp",
+  "file": "/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Server/src/core/server.cpp",
+  "output": "CMakeFiles/server.dir/src/core/server.cpp.o"
+},
+{
+  "directory": "/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Server/build",
+  "command": "/usr/bin/clang++  -I/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Server/include -g -std=gnu++20 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/server.dir/src/core/node.cpp.o -c /Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Server/src/core/node.cpp",
+  "file": "/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Server/src/core/node.cpp",
+  "output": "CMakeFiles/server.dir/src/core/node.cpp.o"
+},
+{
+  "directory": "/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Server/build",
+  "command": "/usr/bin/clang++  -I/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Server/include -g -std=gnu++20 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/server.dir/src/core/client.cpp.o -c /Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Server/src/core/client.cpp",
+  "file": "/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Server/src/core/client.cpp",
+  "output": "CMakeFiles/server.dir/src/core/client.cpp.o"
+}
+]

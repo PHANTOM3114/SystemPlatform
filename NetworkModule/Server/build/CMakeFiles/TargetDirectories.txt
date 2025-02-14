@@ -1,0 +1,3 @@
+/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Server/build/CMakeFiles/server.dir
+/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Server/build/CMakeFiles/edit_cache.dir
+/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Server/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Client/build",
+  "command": "/usr/bin/clang++  -I/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Client/include -g -std=gnu++20 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/NetworkClient.dir/src/main.cpp.o -c /Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Client/src/main.cpp",
+  "file": "/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/NetworkModule/Client/src/main.cpp",
+  "output": "CMakeFiles/NetworkClient.dir/src/main.cpp.o"
+}
+]

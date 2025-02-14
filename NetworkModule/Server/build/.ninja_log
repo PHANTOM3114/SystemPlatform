@@ -1,0 +1,6 @@
+# ninja log v6
+2	131	1739486121710861291	CMakeFiles/server.dir/src/core/node.cpp.o	bf0bb33885d63daa
+1	1284	1739486121710004342	CMakeFiles/server.dir/src/main.cpp.o	1e32aebf0c7ccb3
+2	132	1739486121711230788	CMakeFiles/server.dir/src/core/client.cpp.o	1aecdbcfc5be6891
+1	1388	1739486121710533420	CMakeFiles/server.dir/src/core/server.cpp.o	7ba568f491c979e7
+1389	1555	1739486123097594228	bin/server	46ef6b35ec5c3c09
