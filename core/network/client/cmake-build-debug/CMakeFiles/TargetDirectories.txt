@@ -1,0 +1,3 @@
+/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/core/network/Client/cmake-build-debug/CMakeFiles/Client.dir
+/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/core/network/Client/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/core/network/Client/cmake-build-debug/CMakeFiles/rebuild_cache.dir

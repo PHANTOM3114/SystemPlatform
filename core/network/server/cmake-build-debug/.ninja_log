@@ -1,0 +1,7 @@
+# ninja log v6
+7	635	1740517589903335278	CMakeFiles/server.dir/src/core/network_module.cpp.o	5d9fba3770d2530e
+13	64	1740518770166974363	build.ninja	753d696053d86e08
+5	123	1740511179257842679	CMakeFiles/server.dir/src/core/node.cpp.o	4e530649f48160fc
+12	660	1740517493354258524	CMakeFiles/server.dir/src/main.cpp.o	61918da02e284ac5
+5	122	1740511179257936178	CMakeFiles/server.dir/src/core/client.cpp.o	c357c3edca178097
+635	748	1740517590531905016	bin/server	99f7ff2d5c9ef0db

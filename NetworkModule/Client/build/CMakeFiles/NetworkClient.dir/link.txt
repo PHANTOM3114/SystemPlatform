@@ -1,1 +1,0 @@
-/usr/bin/clang++ -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/NetworkClient.dir/src/main.cpp.o CMakeFiles/NetworkClient.dir/src/core/client.cpp.o CMakeFiles/NetworkClient.dir/src/core/connection.cpp.o -o NetworkClient
