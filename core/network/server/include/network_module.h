@@ -9,6 +9,9 @@
 #include <arpa/inet.h>
 #include <pthread.h>
 #include <thread>
+#include <nlohmann/json.hpp>
+#include <asio.hpp>
+#include <database_datamodule.h>
 
 #define START_PORT 8000
 #define END_PORT 9000
@@ -24,11 +27,12 @@ private:
 
     int port;
     int server_fd;
-    static void* handle_client(int client_socket);
+    void* handle_client(int client_socket);
+    DataModule& data_module;
 
 public:
 
-    network_module();
+    network_module(DataModule& dataModule);
     ~network_module();
 
     void start();

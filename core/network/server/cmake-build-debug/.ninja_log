@@ -1,7 +1,9 @@
 # ninja log v6
-7	635	1740517589903335278	CMakeFiles/server.dir/src/core/network_module.cpp.o	5d9fba3770d2530e
-13	64	1740518770166974363	build.ninja	753d696053d86e08
+8	1495	1740646872768983169	CMakeFiles/server.dir/src/core/network_module.cpp.o	c2c4337f1bb849e0
+13	64	1740647013061210325	build.ninja	753d696053d86e08
+6	421	1740646358954126035	CMakeFiles/server.dir/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/core/database/src/core/database_datamodule.cpp.o	af5e26fd2ca0bb2e
 5	123	1740511179257842679	CMakeFiles/server.dir/src/core/node.cpp.o	4e530649f48160fc
-12	660	1740517493354258524	CMakeFiles/server.dir/src/main.cpp.o	61918da02e284ac5
+7	1273	1740646872767929298	CMakeFiles/server.dir/src/main.cpp.o	c7a9cf731b61cc6d
 5	122	1740511179257936178	CMakeFiles/server.dir/src/core/client.cpp.o	c357c3edca178097
 635	748	1740517590531905016	bin/server	99f7ff2d5c9ef0db
+5	101	1740647016780539594	bin/server	4a3d062edb2ca79b
