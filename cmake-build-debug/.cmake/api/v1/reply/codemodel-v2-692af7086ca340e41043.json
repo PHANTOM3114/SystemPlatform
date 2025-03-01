@@ -1,0 +1,151 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.30"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "tests",
+					"jsonFile" : "directory-tests-Debug-b01f6abb0ab61427ef3b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.30"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tests"
+				},
+				{
+					"build" : "core/datamanagement",
+					"jsonFile" : "directory-core.datamanagement-Debug-a6e76c9f3a76f1c0c0f4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.30"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "core/datamanagement",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "core/network",
+					"jsonFile" : "directory-core.network-Debug-28801acd3193b6de92d9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.30"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "core/network",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "SystemPlatform",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "datamanagement_module",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "network_module",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "SystemPlatform::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SystemPlatform-Debug-4a9713634758dc2297c2.json",
+					"name" : "SystemPlatform",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "datamanagement_module::@4a99b9c45f678fd460f7",
+					"jsonFile" : "target-datamanagement_module-Debug-a572a36316c03337489d.json",
+					"name" : "datamanagement_module",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "network_module::@d6b9741e7c5506353cca",
+					"jsonFile" : "target-network_module-Debug-aa4168004c0ff87bc43a.json",
+					"name" : "network_module",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/mykhailokhymochko/Desktop/SystemPlatform/cmake-build-debug",
+		"source" : "/Users/mykhailokhymochko/Desktop/SystemPlatform"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

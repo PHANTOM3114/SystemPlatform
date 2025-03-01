@@ -1,0 +1,2 @@
+/Users/mykhailokhymochko/Desktop/SystemPlatform/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mykhailokhymochko/Desktop/SystemPlatform/cmake-build-debug/CMakeFiles/rebuild_cache.dir
