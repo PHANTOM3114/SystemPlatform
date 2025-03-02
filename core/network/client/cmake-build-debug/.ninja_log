@@ -1,6 +1,0 @@
-# ninja log v6
-5	542	1740490705798805413	CMakeFiles/Client.dir/src/main.cpp.o	bad0b070efb02f9a
-6	479	1740490705799589168	CMakeFiles/Client.dir/src/core/connection.cpp.o	8e52ea63c1a6a665
-6	564	1740490705799368333	CMakeFiles/Client.dir/src/core/client.cpp.o	3af9b1b1d0ddb493
-1633	1780	1740322264371466117	bin/Client	79521311f978cf16
-564	645	1740490706357846522	Client	f56a75973e82e4b0

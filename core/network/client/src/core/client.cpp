@@ -5,11 +5,13 @@ Client::Client() {};
 
 int Client::read_port()
 {
-    std::filesystem::path relativePath = "../../data/server_port.txt";
-    std::filesystem::path absolute = std::filesystem::absolute(relativePath);
+    std::filesystem::path basePath = std::filesystem::path(__FILE__).parent_path().parent_path().parent_path().parent_path();
+    std::filesystem::path absolute = basePath / "data/server_port.txt";
     
-    std::ifstream file(relativePath);
+    std::ifstream file(absolute);
     int port = 0;
+    
+    std::cout << "Reading port from: " << absolute << std::endl;
 
     if (file.is_open())
     {
@@ -19,7 +21,7 @@ int Client::read_port()
 
     else
     {
-        std::cerr << "Error while opening file: " << relativePath << std::endl;
+        std::cerr << "Error while opening file: " << absolute << std::endl;
         exit(EXIT_FAILURE);
     }
 
@@ -32,8 +34,9 @@ int Client::read_port()
     return port;
 }
 
-void Client::run() {
+void Client::run()
+{
     Connection conn(read_port());
     conn.connect_to_server();
-    conn.send_message("Hello Server!");
+    conn.send_message();
 }

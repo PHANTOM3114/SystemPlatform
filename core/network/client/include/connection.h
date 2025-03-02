@@ -12,8 +12,13 @@ private:
     struct sockaddr_in socket_addr;
 
 public:
+    
     explicit Connection(int port);
     ~Connection();
+    
     void connect_to_server();
-    void send_message(const std::string& message);
+    void send_message();
+    void send_user_message(const std::string& message);
+    void send_wave_hand();
+    
 };

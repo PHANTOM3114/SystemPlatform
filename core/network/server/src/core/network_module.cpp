@@ -1,6 +1,6 @@
 #include "network_module.h"
 
-Core::Network::network_module::network_module(DataModule& dataModule) : data_module(dataModule) // <---- ЗМІНЕНО: Конструктор приймає DataModule& і ініціалізує поле
+Core::Network::network_module::network_module()
 {
     port = find_available_port(START_PORT, END_PORT);
 
@@ -26,7 +26,7 @@ Core::Network::network_module::network_module(DataModule& dataModule) : data_mod
         perror("Listening error!");
         exit(EXIT_FAILURE);
     }
-
+    
 }
 
 Core::Network::network_module::~network_module()
@@ -63,45 +63,13 @@ void* Core::Network::network_module::handle_client(int client_socket)
     char buffer[BUFFER_SIZE];
     ssize_t bytes_read;
 
-    while ((bytes_read = read(client_socket, buffer, BUFFER_SIZE - 1)) > 0)
-    {
+    while ((bytes_read = read(client_socket, buffer, BUFFER_SIZE - 1)) > 0) {
         buffer[bytes_read] = '\0';
-        std::string message(buffer);
-
-        try
-        {
-            nlohmann::json json_message = nlohmann::json::parse(message);
-
-            std::string timestamp = json_message["timestamp"];
-            std::string sensor_type = json_message["sensor_type"];
-            double temperature  = json_message["temperature"].get<double>();
-
-            std::cout << "Server received JSON: " << json_message.dump() << std::endl;
-            std::cout << "Extracted data: timestamp = " << timestamp << ", sensor_type = " << sensor_type << ", temperature = " << temperature << std::endl;
-
-            if (this->data_module.insertSensorData(timestamp, temperature, sensor_type))
-            {
-                std::cout << "Data inserted successfully from JSON message." << std::endl;
-            }
-            else
-            {
-                std::cerr << "Error inserting data from JSON message!" << std::endl;
-            }
-        }
-        catch (nlohmann::json::parse_error& e)
-        {
-            std::cerr << "JSON parse error: " << e.what() << " in message: " << message << std::endl;
-        }
-        catch (std::exception& e)
-        {
-            std::cerr << "Exception while processing JSON message: " << e.what() << std::endl;
-        }
-
-        std::cout << "Client has disconnected\n";
-        close(client_socket);
-
-        return nullptr;
+        std::cout << "Received " << buffer << std::endl;
     }
+
+    std::cout << "Client has disconnected\n";
+    close(client_socket);
 }
 
 int Core::Network::network_module::find_available_port(int start_port, int end_port)

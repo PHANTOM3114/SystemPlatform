@@ -1,2 +1,0 @@
-#pragma once
-#define DATABASE_PATH "@DATABASE_ROOT_DIR@/smarthome.db"

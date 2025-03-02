@@ -22,9 +22,6 @@ public:
     ~DataModule();
 
     bool createSensorDataTable();
-    bool insertSensorData(const std::string& timestamp, double temperature, const std::string& sensor_type);
-    bool deleteSensorData(int id);
-    bool updateSensorData(int id, double new_temperature);
-};
+    bool insertSensorData(const std::string& timestamp, double temperature, const std::string& sensor_type);};
 
 #endif //DATABASE_DATAMODULE_H

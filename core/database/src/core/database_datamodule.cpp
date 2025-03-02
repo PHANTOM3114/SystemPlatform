@@ -29,8 +29,7 @@ DataModule::~DataModule()
     }
 }
 
-bool DataModule::createSensorDataTable()
-{
+bool DataModule::createSensorDataTable() {
     if (!db_connection_) {
         std::cerr << "Error: Database connection is not established." << std::endl;
         return false;
@@ -104,99 +103,3 @@ bool DataModule::insertSensorData(const std::string& timestamp, double temperatu
 
     return true;
 }
-
-bool DataModule::deleteSensorData(int id)
-{
-    if (!db_connection_) {
-        std::cerr << "Error: Database connection is not established." << std::endl;
-        return false;
-    }
-
-    const char* sql_delete_data = "DELETE FROM sensor_data WHERE id =?;";
-
-    sqlite3_stmt* stmt;
-    int rc = sqlite3_prepare_v2(db_connection_, sql_delete_data, -1, &stmt, nullptr);
-
-    if (rc != SQLITE_OK)
-    {
-        std::cerr << "SQL prepare error (DELETE): code = " << rc << ", message: " << sqlite3_errmsg(db_connection_) << std::endl;
-        return false;
-    }
-
-    int paramIndexId = 1;
-    sqlite3_bind_int(stmt, paramIndexId, id);
-
-    rc = sqlite3_step(stmt);
-
-    if (rc != SQLITE_DONE)
-    {
-        std::cerr << "SQL step error (DELETE): code = " << rc << ", message: " << sqlite3_errmsg(db_connection_) << std::endl;
-        sqlite3_finalize(stmt);
-        return false;
-    }
-
-    int changes = sqlite3_changes(db_connection_);
-
-    sqlite3_finalize(stmt);
-
-    if (changes > 0)
-    {
-        std::cout << "DataModule: Data deleted successfully, id = " << id << std::endl;
-        return true;
-    }
-    else
-    {
-        std::cout << "DataModule: Data with id = " << id << " not found or not deleted." << std::endl;
-        return false;
-    }
-}
-
-bool DataModule::updateSensorData(int id, double new_temperature)
-{
-    if (!db_connection_) {
-        std::cerr << "Error: Database connection is not established." << std::endl;
-        return false;
-    }
-
-    const char* sql_update_data = "UPDATE sensor_data SET temperature = ? WHERE id = ?;";
-
-    sqlite3_stmt* stmt;
-    int rc = sqlite3_prepare_v2(db_connection_, sql_update_data, -1, &stmt, nullptr);
-
-    if (rc != SQLITE_OK)
-    {
-        std::cerr << "SQL prepare error (UPDATE): code = " << rc << ", message: " << sqlite3_errmsg(db_connection_) << std::endl;
-        return false;
-    }
-
-    int paramIndexTemperature = 1;
-    int paramIndexId = 2;
-
-    sqlite3_bind_double(stmt, paramIndexTemperature, new_temperature);
-    sqlite3_bind_int(stmt, paramIndexId, id);
-
-    rc = sqlite3_step(stmt);
-
-    if (rc != SQLITE_DONE)
-    {
-        std::cerr << "SQL step error (UPDATE): code = " << rc << ", message: " << sqlite3_errmsg(db_connection_) << std::endl;
-        sqlite3_finalize(stmt);
-        return false;
-    }
-
-    int changes = sqlite3_changes(db_connection_);
-
-    sqlite3_finalize(stmt);
-
-    if (changes > 0)
-    {
-        std::cout << "DataModule: Data updated successfully, id = " << id << ", new temperature = " << new_temperature << std::endl;
-        return true;
-    }
-    else
-    {
-        std::cout << "DataModule: Data with id = " << id << " not found or not updated!" << std::endl;
-        return false;
-    }
-}
-

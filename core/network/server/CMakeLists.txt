@@ -1,28 +1,22 @@
 cmake_minimum_required(VERSION 3.30)
-project(server)
+project(Server) # **Залишаємо project(Server), це назва ПІДПРОЄКТУ**
 
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 20) # **Залишаємо стандарт C++ - він може бути різним для різних підпроєктів, але тут він однаковий**
 
-# Add include directories
-include_directories(${CMAKE_SOURCE_DIR}/include)
-include_directories(${CMAKE_SOURCE_DIR}/../../database/include)
+# Include directories - **ЗМІНЮЄМО ШЛЯХИ, щоб були відносно кореня проєкту**
+include_directories(${CMAKE_SOURCE_DIR}/include) # **${CMAKE_SOURCE_DIR} вказує на КОРІНЬ ПРОЄКТУ SystemPlatform тепер!**
 
-# Add source files
+# Add source files - **ШЛЯХИ ВЖЕ ПРАВИЛЬНІ, бо вони відносні до папки server**
 set(SOURCES
-        src/main.cpp
-        src/core/network_module.cpp
-        ../../database/src/core/database_datamodule.cpp
+    src/main.cpp
+    src/core/network_module.cpp
 )
 
-find_package(nlohmann_json 3.11.3 REQUIRED)
-find_package(SQLite3 REQUIRED)
+# Set the output directory - **ЗАЛИШАЄМО ЯК Є, але тепер відносно build папки в корені SystemPlatform**
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin) # **${CMAKE_BINARY_DIR} тепер - це папка build в корені SystemPlatform!**
 
-# Set the output directory for the executable
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-
-# Create executable
+# Create executable - **НАЗВА ВИКОНУВАНОГО ФАЙЛУ "server" ЗАЛИШАЄТЬСЯ**
 add_executable(server ${SOURCES})
 
-# Link libraries
-target_link_libraries(server PRIVATE pthread sqlite3 nlohmann_json::nlohmann_json)
-
+# Link libraries - **ЗАЛИШАЄМО ЯК Є**
+target_link_libraries(server pthread)
