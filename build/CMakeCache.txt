@@ -342,6 +342,15 @@ SystemPlatform_IS_TOP_LEVEL:STATIC=ON
 SystemPlatform_SOURCE_DIR:STATIC=/Users/mykhailokhymochko/SystemPlatform
 
 //Value Computed by CMake
+client_BINARY_DIR:STATIC=/Users/mykhailokhymochko/SystemPlatform/build/core/network/client
+
+//Value Computed by CMake
+client_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+client_SOURCE_DIR:STATIC=/Users/mykhailokhymochko/SystemPlatform/core/network/client
+
+//Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/Users/mykhailokhymochko/SystemPlatform/build/_deps/googletest-build/googlemock
 
 //Value Computed by CMake
@@ -571,6 +580,8 @@ PROJECT_Server_GUID_CMAKE:INTERNAL=0D32E176B1F34B53AC18A242
 PROJECT_SystemPlatformTests_GUID_CMAKE:INTERNAL=662D436C48B748469ED74B11
 //Stored Xcode object GUID
 PROJECT_SystemPlatform_GUID_CMAKE:INTERNAL=7A5129F12B494166B8E5AEBC
+//Stored Xcode object GUID
+PROJECT_client_GUID_CMAKE:INTERNAL=779E573F54AE49E29D3234DD
 //Stored Xcode object GUID
 PROJECT_gmock_GUID_CMAKE:INTERNAL=8A49639F3DD74A859B6F6BCC
 //Stored Xcode object GUID

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.30)
 
 # Set the project name - **ЗАЛИШАЄМО project(Client), це назва ПІДПРОЄКТУ**
-project(Client)
+project(client)
 
 # Specify the C++ standard - **ЗАЛИШАЄМО ЯК Є**
 set(CMAKE_CXX_STANDARD 20)

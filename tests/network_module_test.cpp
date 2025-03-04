@@ -6,3 +6,4 @@ TEST(NetworkModule, ConstructorDestructor)
 {
     Core::Network::network_module testModule;
 }
+

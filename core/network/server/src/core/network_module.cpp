@@ -34,23 +34,26 @@ Core::Network::network_module::~network_module()
     close(server_fd);
 }
 
-void Core::Network::network_module::start() {
+void Core::Network::network_module::start()
+{
     std::cout << "Listening PORT " << port << std::endl;
 
     struct sockaddr_in client_addr {};
     socklen_t client_len = sizeof(client_addr);
 
-    while (true) {
+    while (true)
+    {
         int client_fd = accept(server_fd, (struct sockaddr*)&client_addr, &client_len);
 
-        if (client_fd < 0) {
+        if (client_fd < 0)
+        {
             perror("Accepting connection error!");
             continue;
         }
 
         std::cout << "Client connecting " << inet_ntoa(client_addr.sin_addr) << std::endl;
 
-        // Використовуємо лямбда-функцію для створення потоку
+        // Use lambda-function for creating the thread
         std::thread client_thread([this, client_fd]() {
             this->handle_client(client_fd);
         });
@@ -63,13 +66,35 @@ void* Core::Network::network_module::handle_client(int client_socket)
     char buffer[BUFFER_SIZE];
     ssize_t bytes_read;
 
-    while ((bytes_read = read(client_socket, buffer, BUFFER_SIZE - 1)) > 0) {
-        buffer[bytes_read] = '\0';
-        std::cout << "Received " << buffer << std::endl;
+    while (true)
+    {
+        bytes_read = recv(client_socket, buffer, BUFFER_SIZE, 0);
+
+        if (bytes_read > 0)
+        {
+            buffer[bytes_read] = '\0';
+            std::cout << "Received " << buffer << std::endl;
+
+            std::string received_message(buffer);
+            request_handler(client_socket, received_message);
+        }
+        else if (bytes_read == 0)
+        {
+            std::cout << "Client has disconnected\n";
+            break;
+        }
+        else
+        {
+            perror("Error reading from client!");
+            break;
+        }
     }
 
-    std::cout << "Client has disconnected\n";
+    std::cout << "Closing client socket.\n";
     close(client_socket);
+
+    std::cout << "Client socket closed.\n";
+    return nullptr;
 }
 
 int Core::Network::network_module::find_available_port(int start_port, int end_port)
@@ -111,10 +136,12 @@ int Core::Network::network_module::find_available_port(int start_port, int end_p
 
     std::ofstream port_file(absolute, std::ios::trunc);
 
-    if (!std::filesystem::exists(absolute)) {
+    if (!std::filesystem::exists(absolute))
+    {
         std::cerr << "File does not exist! Trying to create..." << std::endl;
         std::ofstream create_file(absolute);
-        if (!create_file) {
+        if (!create_file)
+        {
             std::cerr << "Failed to create file! Check permissions!" << std::endl;
             exit(EXIT_FAILURE);
         }
@@ -132,4 +159,73 @@ int Core::Network::network_module::find_available_port(int start_port, int end_p
 
     close(sock_fd);
     return free_port;
+}
+
+// Client-side requests
+void Core::Network::network_module::request_handler(int client_socket, const std::string& message)
+{
+    if (message == "GET_TIME")
+    {
+        std::string current_time = get_time();
+        std::string time_responce = "TIME: " + current_time;
+        send_responce(client_socket, time_responce);
+    }
+    
+    else if (message == "GET_STATUS")
+    {
+        std::string status = get_status();
+        std::string status_responce = "SERVER STATUS: " + status;
+        
+        send_responce(client_socket, status_responce);
+    }
+}
+
+std::string Core::Network::network_module::get_time()
+{
+    std::time_t current_time_raw;
+    std::time(&current_time_raw);
+    
+    std::tm* current_time_local = std::localtime(&current_time_raw);
+    
+    char buffer[9];
+    std::strftime(buffer, sizeof(buffer), "%H:%M:%S", current_time_local);
+    
+    return std::string(buffer);
+}
+
+std::string Core::Network::network_module::get_status()
+{
+    if (get_current_active_connections() > 0)
+    {
+        return "The Server is busy";
+    }
+    else
+    {
+        return "The Server is Online";
+    }
+}
+
+void Core::Network::network_module::send_responce(int client_socket, const std::string& responce)
+{
+    const char* message_responce = responce.c_str();
+    size_t message_length = std::strlen(message_responce);
+
+    std::cout << "DEBUG: send_responce() called for client_socket: " << client_socket << ", message: " << responce << ", length: " << message_length << std::endl;
+
+    ssize_t bytes_sent = send(client_socket, message_responce, message_length, 0);
+
+    if (bytes_sent < 0)
+    {
+        perror("Sending failed!");
+        close(client_socket); // Close the client socket on error
+        return;
+    }
+    else if (bytes_sent != message_length)
+    {
+        std::cerr << "Warning! Sent less bytes than expected, sent: " << bytes_sent << std::endl;
+    }
+    else
+    {
+        std::cout << "Successfully sent message to client: " << message_responce << std::endl;
+    }
 }
