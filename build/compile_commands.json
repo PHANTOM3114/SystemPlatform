@@ -1,0 +1,68 @@
+[
+{
+  "directory": "/Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-build/googlemock",
+  "command": "/usr/bin/clang++  -I/Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-src/googlemock/include -I/Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-src/googlemock -isystem /Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-src/googletest/include -isystem /Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-src/googletest -g -std=c++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk  -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "file": "/Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
+},
+{
+  "directory": "/Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-build/googlemock",
+  "command": "/usr/bin/clang++  -isystem /Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-src/googlemock/include -isystem /Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-src/googlemock -isystem /Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-src/googletest/include -isystem /Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-src/googletest -g -std=c++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk  -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "file": "/Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
+},
+{
+  "directory": "/Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-build/googletest",
+  "command": "/usr/bin/clang++  -I/Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-src/googletest/include -I/Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-src/googletest -g -std=c++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk  -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "file": "/Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+},
+{
+  "directory": "/Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-build/googletest",
+  "command": "/usr/bin/clang++  -isystem /Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-src/googletest/include -isystem /Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-src/googletest -g -std=c++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk  -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "file": "/Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+},
+{
+  "directory": "/Users/mykhailokhymochko/Documents/GitHubRP/build/core/network/server",
+  "command": "/usr/bin/clang++  -I/Users/mykhailokhymochko/Documents/GitHubRP/include -I/Users/mykhailokhymochko/Documents/GitHubRP/core/include -I/Users/mykhailokhymochko/Documents/GitHubRP/core/network/server/include -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/server.dir/src/main.cpp.o -c /Users/mykhailokhymochko/Documents/GitHubRP/core/network/server/src/main.cpp",
+  "file": "/Users/mykhailokhymochko/Documents/GitHubRP/core/network/server/src/main.cpp",
+  "output": "core/network/server/CMakeFiles/server.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/mykhailokhymochko/Documents/GitHubRP/build/core/network/server",
+  "command": "/usr/bin/clang++  -I/Users/mykhailokhymochko/Documents/GitHubRP/include -I/Users/mykhailokhymochko/Documents/GitHubRP/core/include -I/Users/mykhailokhymochko/Documents/GitHubRP/core/network/server/include -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/server.dir/src/core/network_module.cpp.o -c /Users/mykhailokhymochko/Documents/GitHubRP/core/network/server/src/core/network_module.cpp",
+  "file": "/Users/mykhailokhymochko/Documents/GitHubRP/core/network/server/src/core/network_module.cpp",
+  "output": "core/network/server/CMakeFiles/server.dir/src/core/network_module.cpp.o"
+},
+{
+  "directory": "/Users/mykhailokhymochko/Documents/GitHubRP/build/core/network/client",
+  "command": "/usr/bin/clang++  -I/Users/mykhailokhymochko/Documents/GitHubRP/include -I/Users/mykhailokhymochko/Documents/GitHubRP/core/include -I/Users/mykhailokhymochko/Documents/GitHubRP/core/network/server/include -I/Users/mykhailokhymochko/Documents/GitHubRP/core/network/client/include -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/Client.dir/src/main.cpp.o -c /Users/mykhailokhymochko/Documents/GitHubRP/core/network/client/src/main.cpp",
+  "file": "/Users/mykhailokhymochko/Documents/GitHubRP/core/network/client/src/main.cpp",
+  "output": "core/network/client/CMakeFiles/Client.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/mykhailokhymochko/Documents/GitHubRP/build/core/network/client",
+  "command": "/usr/bin/clang++  -I/Users/mykhailokhymochko/Documents/GitHubRP/include -I/Users/mykhailokhymochko/Documents/GitHubRP/core/include -I/Users/mykhailokhymochko/Documents/GitHubRP/core/network/server/include -I/Users/mykhailokhymochko/Documents/GitHubRP/core/network/client/include -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/Client.dir/src/core/client.cpp.o -c /Users/mykhailokhymochko/Documents/GitHubRP/core/network/client/src/core/client.cpp",
+  "file": "/Users/mykhailokhymochko/Documents/GitHubRP/core/network/client/src/core/client.cpp",
+  "output": "core/network/client/CMakeFiles/Client.dir/src/core/client.cpp.o"
+},
+{
+  "directory": "/Users/mykhailokhymochko/Documents/GitHubRP/build/core/network/client",
+  "command": "/usr/bin/clang++  -I/Users/mykhailokhymochko/Documents/GitHubRP/include -I/Users/mykhailokhymochko/Documents/GitHubRP/core/include -I/Users/mykhailokhymochko/Documents/GitHubRP/core/network/server/include -I/Users/mykhailokhymochko/Documents/GitHubRP/core/network/client/include -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/Client.dir/src/core/connection.cpp.o -c /Users/mykhailokhymochko/Documents/GitHubRP/core/network/client/src/core/connection.cpp",
+  "file": "/Users/mykhailokhymochko/Documents/GitHubRP/core/network/client/src/core/connection.cpp",
+  "output": "core/network/client/CMakeFiles/Client.dir/src/core/connection.cpp.o"
+},
+{
+  "directory": "/Users/mykhailokhymochko/Documents/GitHubRP/build/tests",
+  "command": "/usr/bin/clang++  -I/Users/mykhailokhymochko/Documents/GitHubRP/include -I/Users/mykhailokhymochko/Documents/GitHubRP/core/include -I/Users/mykhailokhymochko/Documents/GitHubRP/core/network/server/include -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/network_module.dir/__/core/network/server/src/core/network_module.cpp.o -c /Users/mykhailokhymochko/Documents/GitHubRP/core/network/server/src/core/network_module.cpp",
+  "file": "/Users/mykhailokhymochko/Documents/GitHubRP/core/network/server/src/core/network_module.cpp",
+  "output": "tests/CMakeFiles/network_module.dir/__/core/network/server/src/core/network_module.cpp.o"
+},
+{
+  "directory": "/Users/mykhailokhymochko/Documents/GitHubRP/build/tests",
+  "command": "/usr/bin/clang++  -I/Users/mykhailokhymochko/Documents/GitHubRP/include -I/Users/mykhailokhymochko/Documents/GitHubRP/core/include -I/Users/mykhailokhymochko/Documents/GitHubRP/core/network/server/include -isystem /Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-src/googletest/include -isystem /Users/mykhailokhymochko/Documents/GitHubRP/build/_deps/googletest-src/googletest -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/system_platform_tests.dir/network_module_test.cpp.o -c /Users/mykhailokhymochko/Documents/GitHubRP/tests/network_module_test.cpp",
+  "file": "/Users/mykhailokhymochko/Documents/GitHubRP/tests/network_module_test.cpp",
+  "output": "tests/CMakeFiles/system_platform_tests.dir/network_module_test.cpp.o"
+}
+]

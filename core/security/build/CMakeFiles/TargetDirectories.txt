@@ -1,0 +1,3 @@
+/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/SecurityModule/build/CMakeFiles/SecurityModule.dir
+/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/SecurityModule/build/CMakeFiles/edit_cache.dir
+/Users/mykhailokhymochko/Desktop/C++/SystemPlatform/SecurityModule/build/CMakeFiles/rebuild_cache.dir

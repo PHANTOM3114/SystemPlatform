@@ -1,0 +1,40 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #2E3440; /* Nord 0 - Темний фон навігації */
+  color: #D8DEE9; /* Nord 4 - Світлий текст навігації */
+}
+
+.logo { /* Змінено з .navigation-logo та .navigation-logo-link на .logo */
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none; /* Прибираємо підкреслення (якщо воно було раніше) */
+  color: #D8DEE9; /* Nord 4 - Колір логотипу */
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0; /* Додано, щоб прибрати стандартні відступи списку */
+  margin: 0; /* Додано, щоб прибрати стандартні відступи списку */
+}
+
+.navigation li {
+  /* Стилі для елементів списку (<li>), якщо потрібно - зараз порожньо */
+}
+
+.navigation a {
+  color: #D8DEE9; /* Nord 4 - Колір посилань меню */
+  text-decoration: none; /* Прибираємо підкреслення посилань */
+  padding: 0.5rem 1rem; /* Додаємо відступи для кращого вигляду кнопок */
+  border-radius: 0.5rem; /* Заокруглюємо кути кнопок посилань */
+}
+
+.navigation a:hover {
+  background-color: rgba(var(--nord3-rgb), 0.7); /* Підсвітка фону при наведенні */
+  color: var(--nord14); /* Змінюємо колір тексту при наведенні на акцентний */
+  text-decoration: none; /* Прибираємо підкреслення при наведенні (якщо раптом з'явилося б) */
+}

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnetwork_module.a CMakeFiles/network_module.dir/__/core/network/server/src/core/network_module.cpp.o
+/usr/bin/ranlib libnetwork_module.a

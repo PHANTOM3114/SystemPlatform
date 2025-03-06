@@ -1,0 +1,9 @@
+Target dependency graph (4 targets)
+Target 'system_platform_tests' in project 'SystemPlatform'
+➜ Explicit dependency on target 'gtest' in project 'SystemPlatform'
+➜ Explicit dependency on target 'gtest_main' in project 'SystemPlatform'
+➜ Explicit dependency on target 'network_module' in project 'SystemPlatform'
+Target 'network_module' in project 'SystemPlatform' (no dependencies)
+Target 'gtest_main' in project 'SystemPlatform'
+➜ Explicit dependency on target 'gtest' in project 'SystemPlatform'
+Target 'gtest' in project 'SystemPlatform' (no dependencies)
