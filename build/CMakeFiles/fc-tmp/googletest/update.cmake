@@ -4,6 +4,6 @@ message(VERBOSE "Executing update step for googletest")
 
 block(SCOPE_FOR VARIABLES)
 
-include("/Users/mykhailokhymochko/SystemPlatform/build/CMakeFiles/fc-tmp/googletest/googletest-gitupdate.cmake")
+include("/Users/mykhailokhymochko/Documents/GitHubRP/build/CMakeFiles/fc-tmp/googletest/googletest-gitupdate.cmake")
 
 endblock()
