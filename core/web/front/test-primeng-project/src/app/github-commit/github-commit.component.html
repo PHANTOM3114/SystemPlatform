@@ -1,0 +1,6 @@
+<div class="heatmap">
+    <div *ngFor="let day of days" 
+         class="day" 
+         [ngStyle]="{'background-color': getIntensity(day)}">
+    </div>
+  </div>
